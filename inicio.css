@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+
+/* Estilos Gerais */
+body {
+    background-color: #03227D;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    
+    box-sizing: border-box;
+}
+
+/* Menu no cabeçalho */
+.cabecalho-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #38b6ff;
+}
+
+/* Estilo dos itens do menu */
+.menu { 
+    font-family: "Sarala", sans-serif;
+    color: #03227D;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Imagem principal dentro do elemento com ID principal */
+#principal{
+    display: block; /* Remove espaço em branco ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    height: 90%;
+    width: auto;
+}
+
+/* Container da imagem principal */
+.img-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding-top: 20px;
+}
+
+/* Estilo da imagem principal */
+.img-principal img {
+    width: 80px;
+    height: auto;
+    display: block; /* Garante que a imagem seja exibida corretamente */
+    padding-bottom: 0%;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas pequenas (menor que 768px) */
+@media (max-width: 768px) {
+    .menu {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        margin: 10px; /* Reduz a margem */
+    }
+
+    .img-principal img {
+        width: 60px; /* Reduz o tamanho da imagem */
+    }
+}
+
+/* Telas muito pequenas (menor que 480px) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Muda a direção do cabeçalho para coluna */
+        align-items: center; /* Alinha o conteúdo centralizado */
+        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
+    }
+
+    .menu {
+        margin: 5px; /* Reduz ainda mais a margem dos itens do menu */
+    }
+
+    .img-principal img {
+        width: 50px; /* Reduz ainda mais o tamanho da imagem */
+    }
+}
+
+

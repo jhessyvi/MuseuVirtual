@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+body {
+    background-color: #03227D;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem; /* Ajuste para ser responsivo */
+}
+
+header {
+    box-sizing: border-box;
+}
+
+.cabecalho-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #38b6ff;
+   
+    padding: 10px 20px; /* Espaçamento adequado */
+}
+
+.menu { 
+    font-family: "Sarala", sans-serif;
+    color: #03227D;
+    font-weight: 400;
+    font-size: 1rem; /* Unidades responsivas */
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #00C063;
+    font-weight: bold;
+    font-family: "Paytone One", sans-serif;
+    text-align: center;
+    padding-bottom: 2%;
+    font-size: 2rem; /* Tamanho responsivo */
+}
+
+.praia {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adicionando espaçamento */
+}
+
+.praia img {
+    width: 100%; /* Tornando a imagem responsiva */
+    max-width: 600px; /* Largura máxima para telas maiores */
+    border: #00C063 solid 5px;
+    border-radius: 5%;
+}
+
+#h2-principal {
+    padding-top: 2%;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem; /* Tamanho responsivo */
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.falesias, .culinaria {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-bottom: 7%;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+}
+
+.falesias img, .culinaria img {
+    margin-right: 10px;
+    width: 100%; /* Ajuste para imagens responsivas */
+    max-width: 200px;
+    border: #38b6ff solid 5px;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column; /* Mantém os textos um abaixo do outro */
+}
+
+h2 {
+    color: #00bf63;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.5rem; /* Tamanho responsivo */
+    font-family: "Paytone One", sans-serif;
+}
+
+h3 {
+    padding-top: 5%;
+    color: #ffffff; 
+    margin: 0;
+    font-size: 1.2rem; /* Tamanho responsivo */
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    position: relative;
+    padding-bottom: 100px; /* Garante que o conteúdo não sobreponha o coqueiro */
+    min-height: 100vh; /* O container ocupa toda a altura da tela */
+}
+
+.content {
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo fique acima do coqueiro */
+}
+
+.Coqueiro {
+    position: absolute;
+    bottom: 0; /* Posiciona o coqueiro na parte inferior do container */
+    right: 0;  /* Alinha o coqueiro à direita do container */
+    z-index: 1; /* Garante que o coqueiro fique atrás do conteúdo */
+    opacity: 0.8;
+}
+
+.Coqueiro img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0%;
+    
+}
+
+footer img {
+    width: 51px;
+    height: auto;
+    display: block;
+    padding-bottom: 0%;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .cabecalho-menu {
+       
+        justify-content: center;
+    }
+    
+    .menu {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #h2-principal {
+        font-size: 1.5rem;
+    }
+
+    .falesias, .culinaria {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .falesias img, .culinaria img {
+        max-width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .Coqueiro img {
+        max-width: 80%; /* Reduzir a imagem em telas menores */
+    }
+}
+
+/* Responsividade para telas muito pequenas (mobile) */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    #h2-principal {
+        font-size: 1.2rem;
+    }
+
+    .falesias img, .culinaria img {
+        width: 100%;
+    }
+}

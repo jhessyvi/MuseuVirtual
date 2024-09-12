@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+
+body {
+    background-color: #00bf63;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    box-sizing: border-box;
+}
+
+.cabecalho-menu {
+    display: flex;
+    align-items: center;
+   
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.menu {
+    font-family: "Sarala", sans-serif;
+    color: #03227D;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #02195c;
+    font-weight: bold;
+    font-family: "Paytone One", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.textos {
+    color: rgba(240, 248, 255, 0.973);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 80;
+    font-style: normal;
+    padding: 10px;
+}
+
+#texto-um {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-left: 5%;
+    font-size: 1.5rem;
+}
+
+#texto-dois {
+    padding-top: 50px;
+    font-size: 1.5rem;
+}
+
+
+.primeiro-texto img{
+    width: 800px;
+}
+.primeiro-texto, .segundo-texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Adiciona preenchimento lateral */
+}
+
+.primeiro-texto img, .segundo-texto img {
+    height: auto;
+    max-width: 100%; /* Garante que as imagens sejam dimensionadas */
+}
+
+.img-2 {
+    display: flex;
+    justify-content: end;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+footer img {
+    width: 51px;
+    height: auto;
+    display: block;
+    padding-bottom: 0%;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    #texto-um, #texto-dois {
+        font-size: 1.3rem;
+        padding: 0 10px;
+    }
+    .primeiro-texto, .segundo-texto {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho-menu {
+        
+        justify-content: center;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #texto-um, #texto-dois {
+        font-size: 1.2rem;
+    }
+
+    .primeiro-texto, .segundo-texto {
+        flex-direction: column; /* Empilha os textos e imagens em telas menores */
+    }
+
+    .primeiro-texto img, .segundo-texto img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    #texto-um, #texto-dois {
+        font-size: 1rem;
+    }
+
+    footer img {
+        width: 40px;
+    }
+}
+
+
+
+

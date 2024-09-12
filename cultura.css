@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+   body {
+    background-color: #f7f9ff;
+    margin: 0;
+    padding: 0;
+}
+   
+   
+   
+   
+   header {
+    
+    box-sizing: border-box;
+}
+
+/* Menu no cabeçalho */
+.cabecalho-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#00bf63;
+}
+
+.menu { 
+    font-family: "Sarala", sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+h1{
+    color: #38b6ff;
+    font-weight: bold;
+    font-family: "Paytone One", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    
+}
+
+.padroeira{
+    display: flex;
+  align-items: center;
+  padding-left: 15%;
+  padding-bottom: 7%;
+    
+}
+
+.padroeira img{
+    margin-right: 10px;
+    width: 130px;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column; /* Garante que os textos fiquem um abaixo do outro */
+}
+h2{
+    color: #00bf63;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.2em;
+    font-family: "Paytone One", sans-serif;
+}
+
+h3{
+   padding-top: 5%;
+    color: #002060; 
+    margin: 0;
+    font-size: 1em;
+    font-family: "Paytone One", sans-serif;
+}
+
+.caretas{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 15%;
+    padding-bottom: 7%;
+    
+}
+
+.caretas img{
+    width: 190px;
+}
+
+.h2-1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barco{
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    padding-bottom: 10%;
+}
+
+.barco img{
+    margin-right: 10px;
+    width: 180px;
+}
+
+.marisco{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 15%;
+    padding-bottom: 7%;
+}
+
+.marisco img{
+    width: 190px;
+}
+
+.esporte{
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    padding-bottom: 10%;
+}
+
+.esporte img{
+    margin-right: 10px;
+    width: 180px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding-top: 20px;
+
+}
+footer img {
+    width: 51px;
+    height: auto;
+    display: block; /* Garante que a imagem seja exibida corretamente */
+    padding-bottom: 0%;
+}
